@@ -1,6 +1,8 @@
 const bcrypt = require("bcryptjs");
 const saltRounds = 10;
 const jwt = require("jsonwebtoken");
+const secret = "pitichat";
+
 if (!process.env.HOST_DB) {
   var config = require("../config");
 } else {
@@ -101,9 +103,11 @@ module.exports = (app, db) => {
 
   //route de login
   app.post("/api/v1/user/login", async (req, res, next) => {
+    console.log(req.body);
     let user = await userModel.getUserByMail(req.body.email);
 
     if (user.length === 0) {
+      console.log("user not found");
       res.json({ status: 404, msg: "email inexistant dans la base de donnée" });
     } else {
       //si l'utilisateur n'a pas validé son compte via email
@@ -114,11 +118,13 @@ module.exports = (app, db) => {
 
       let same = await bcrypt.compare(req.body.password, user[0].password);
       if (same) {
+        console.log("same : true");
         let infos = { id: user[0].id, email: user[0].email };
         let token = jwt.sign(infos, secret);
-
+        console.log(token, user[0]);
         res.json({ status: 200, msg: "connecté", token: token, user: user[0] });
       } else {
+        console.log("same : false");
         res.json({ status: 401, msg: "mauvais mot de passe" });
       }
     }

@@ -1,5 +1,3 @@
-const { db } = require("../config");
-
 module.exports = (_db) => {
   db = _db;
   return RdvModel;
