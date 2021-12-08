@@ -1,0 +1,458 @@
+@font-face {
+  font-family: "PN_Soft_Bold";
+  src: url("./assets/fonts/Proxima_Nova_Soft_W03_Bold/Proxima_Nova _Soft_W03_Bold.ttf");
+}
+
+@font-face {
+  font-family: "PN_Soft_Regular";
+  src: url("./assets/fonts/Proxima_Nova_Soft_W03_Regular/Proxima_Nova_Soft_W03_Regular.ttf");
+}
+
+@font-face {
+  font-family: "PN_Soft_It";
+  src: url("./assets/fonts/Proxima_Soft_It/Proxima_Soft_It.ttf");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: -16px;
+  font-family: "PN_Soft_Bold", sans-serif;
+  text-align: center;
+}
+
+#root {
+  margin: 0;
+}
+
+.trl-header {
+  background-color: #004b29;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: right;
+}
+.trl-header div {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.trl-header li {
+  display: inline-block;
+  list-style: none;
+  width: 90%;
+}
+
+.trl-header a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", arial, sans-serif;
+  padding: 0 2%;
+  display: inline-block;
+}
+
+.container {
+  text-align: center;
+}
+
+.logoLogin {
+  width: 17%;
+}
+
+.title2 {
+  font-size: 2.7em;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+a {
+  color: #004b29;
+  text-decoration: none;
+}
+
+.form-trl {
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+.form-trl input {
+  display: block;
+  width: 78%;
+  height: 35px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  min-height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "PN_Soft_Bold", sans-serif;
+}
+
+.form-trl select {
+  display: block;
+  width: 78%;
+  height: 35px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  min-height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "PN_Soft_Bold", sans-serif;
+}
+
+.form-trl textarea {
+  display: block;
+  width: 78%;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  min-height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "PN_Soft_Bold", sans-serif;
+}
+
+.form-trl .button-form {
+  width: 70%;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  line-height: 60px;
+  height: 60px;
+  margin-top: 38px;
+  display: block;
+  font-size: 1.7em;
+  font-family: "PN_Soft_Bold", sans-serif;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.hollywood {
+  color: #82c077;
+}
+
+.sunset-blvd {
+  color: #a2bf35;
+}
+
+.bel-air {
+  color: #62b22f;
+}
+
+.beverly-hills {
+  color: #7dbd61;
+}
+
+.santa-monica {
+  color: #004b29;
+}
+
+.venice {
+  color: #007841;
+}
+
+.c-g {
+  color: #443f3f;
+}
+
+.bgc-bel-air {
+  background-color: #62b22f;
+}
+
+.bgc-santa-monica {
+  background-color: #004b29;
+}
+
+.bgc-sunset-blvd {
+  background-color: #a2bf35;
+}
+
+.log-container {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 3px;
+  color: white;
+}
+
+.log-link {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+}
+
+.log-container a {
+  text-decoration: none;
+  color: white;
+  font-family: "PN_Soft_Bold", sans-serif;
+  font-size: 1.5em;
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.log-container form label {
+  font-family: "PN_Soft_Regular", sans-serif;
+  display: block;
+  margin-left: 13%;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.log-nav-container {
+}
+
+.log-container-img {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.log-container-form {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-top: 50px;
+}
+
+.log-img {
+  max-width: 100%;
+}
+
+.register-img {
+  width: 68%;
+}
+
+.regoster-img.part1 {
+  width: 50.5%;
+}
+
+.register-title {
+  font-size: 1.4em;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.register-part1 {
+  display: inline-block;
+  width: 37%;
+  vertical-align: top;
+}
+
+.register-part2 {
+  display: inline-block;
+  width: 27%;
+  vertical-align: top;
+}
+
+.register-input-civ {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.register-input-name {
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+}
+
+.log-container .register-form {
+  width: 100%;
+}
+
+input.rgpd-inp {
+  display: inline-block;
+  width: 10%;
+}
+
+span.rgpd-span {
+  font-size: 0.7em;
+  display: inline-block;
+  line-height: 15px;
+  width: 80%;
+  text-align: left;
+}
+
+.rgpd-span a {
+  font-size: 0.9em;
+  display: inline;
+  text-decoration: underline;
+}
+
+.register-part1 .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.register-part1 .react-datepicker-wrapper input {
+  color: #004b29;
+}
+
+.register-img-part1 {
+  width: 51%;
+}
+
+.fgt-psw {
+  position: relative;
+  bottom: 90px;
+}
+
+.fgt-psw a {
+  font-size: 0.9em;
+}
+
+.genderChoice {
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  bottom: 20px;
+}
+
+.genderChoice ul {
+  padding: 0;
+}
+
+.genderChoice li {
+  color: black;
+  list-style: none;
+  text-align: center;
+  padding: 7px 7%;
+}
+
+.genderChoice li:hover {
+  background-color: #62b22f;
+}
+
+.prospect-list {
+  border: 2px solid #62b22f;
+  width: 60%;
+  margin: auto;
+  padding: 0;
+}
+
+.prospect-list li {
+  width: 91%;
+  list-style: none;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.prospect-list li:hover {
+  background-color: #62b22f;
+}
+
+.prospect-list li a {
+  display: block;
+  padding: 3% 5%;
+}
+
+.prospect-list li:hover a {
+  color: white;
+}
+
+.prospect-list li .fa-trash {
+  color: red;
+}
+
+.detail-prospect h2 {
+  font-size: 1.8em;
+}
+
+.detail-prospects-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-prospects-buttons .delete {
+  background-color: red;
+  color: white;
+  padding: 10px 2%;
+  margin-right: 3%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.detail-prospects-buttons .update {
+  color: #82c077;
+  padding: 10px 2%;
+  margin-right: 3%;
+  border: 2px solid #82c077;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.new {
+  color: #82c077;
+  padding: 10px 2%;
+  border: 2px solid #82c077;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.popup {
+  width: 56%;
+  border: 2px solid #82c077;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background-color: white;
+  padding: 2%;
+}
+
+.popup .close {
+  text-align: right;
+  margin: 15px 2%;
+  cursor: pointer;
+}
+
+.popup .rdtPicker {
+  border: 1px solid #82c077;
+}
+
+.popup select {
+  display: block;
+  width: 28%;
+  margin-left: 36%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.popup textarea {
+  width: 28%;
+  min-height: 50px;
+}
+
+.popup input[type="submit"] {
+  display: block;
+  margin-left: 45%;
+  margin-top: 15px;
+}
